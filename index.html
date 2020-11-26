@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <h1 class="title">Simple calculator</h1>
+    <input
+      class="input"
+      type="text"
+      title="calculator"
+      onchange="calculate(this.value)"
+      placeholder="Enter operation"
+      value="1+2"
+    />
+    <div class="result-container">
+      <div class="title">Result</div>
+      <span id="result">3</span>
+    </div>
+    <div class="version">
+      version
+      <span id="version"></span>
+    </div>
+    <script src="./calculator.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      showVersion();
+    </script>
+  </body>
+</html>
